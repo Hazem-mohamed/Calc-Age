@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calc_age" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="WSI-bO-T02">
+                                <rect key="frame" x="24" y="116" width="327" height="191"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="191" id="2gR-2G-grQ"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="533403716.28398001">
+                                    <!--2017-11-26 15:41:56 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Age Is" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjq-ZX-tOO">
+                                <rect key="frame" x="24" y="392" width="327" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="Xpx-bf-hab"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jZ-AZ-WIY">
+                                <rect key="frame" x="24" y="524" width="327" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="2q2-tU-Drt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Get My Age Now"/>
+                                <connections>
+                                    <action selector="BtnGetAge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hun-02-UQR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0jZ-AZ-WIY" firstAttribute="top" secondItem="Tjq-ZX-tOO" secondAttribute="bottom" constant="44" id="30Q-W8-P8F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WSI-bO-T02" secondAttribute="trailing" constant="8" id="C6V-bp-XRW"/>
+                            <constraint firstItem="Tjq-ZX-tOO" firstAttribute="leading" secondItem="WSI-bO-T02" secondAttribute="leading" id="Kkh-MV-MWf"/>
+                            <constraint firstItem="0jZ-AZ-WIY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="N8A-VX-tOL"/>
+                            <constraint firstItem="Tjq-ZX-tOO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="PgA-Nj-Xih"/>
+                            <constraint firstItem="WSI-bO-T02" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="96" id="XLb-Vk-Xl0"/>
+                            <constraint firstItem="WSI-bO-T02" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="XWL-DP-PQU"/>
+                            <constraint firstItem="0jZ-AZ-WIY" firstAttribute="trailing" secondItem="Tjq-ZX-tOO" secondAttribute="trailing" id="ZvU-e6-lMx"/>
+                            <constraint firstItem="Tjq-ZX-tOO" firstAttribute="top" secondItem="WSI-bO-T02" secondAttribute="bottom" constant="85" id="eit-Cz-VW1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tjq-ZX-tOO" secondAttribute="trailing" constant="8" id="j7u-gj-bZY"/>
+                            <constraint firstItem="Tjq-ZX-tOO" firstAttribute="trailing" secondItem="WSI-bO-T02" secondAttribute="trailing" id="lwv-es-dYP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0jZ-AZ-WIY" secondAttribute="trailing" constant="8" id="nQJ-6M-7Lf"/>
+                            <constraint firstItem="0jZ-AZ-WIY" firstAttribute="leading" secondItem="Tjq-ZX-tOO" secondAttribute="leading" id="pSg-ue-JpL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DisplayAge" destination="Tjq-ZX-tOO" id="rwE-0L-dxV"/>
+                        <outlet property="dateSelector" destination="WSI-bO-T02" id="HrE-uE-3vF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="129.98500749625188"/>
+        </scene>
+    </scenes>
+</document>
